@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VFM</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="logo.png" />
+      <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+      <img id="logo" onclick="func()" class="menuimg" src="menu.jpg" />
+    </nav>
+    <div id="drop" class="menudrop none">
+      <a href="mainpage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="about.html">Contact me</a>
+    </div>
+
+    <script>
+      function func() {
+        const menu = document.getElementById("logo");
+        const drop = document.getElementById("drop");
+        if (drop.className === "menudrop") {
+          drop.className += " none";
+        } else {
+          drop.className = "menudrop";
+        }
+      }
+    </script>
+
+    <div class="welcome">
+      <h3>Welcome <br /><span class="hello"></span></h3>
+    </div>
+
+    <br />
+    <hr />
+
+    <div class="shopbrand">
+      <h3 class="brandtitle">Browse Mobiles by Brand</h3>
+      <div class="shopbrandcard">
+        <div onclick="location.href='apple.html'" class="brandcard">
+          <div class="brandlogobg">
+            <img class="brandlogo" src="applelogo.png" />
+          </div>
+        </div>
+        <div onclick="location.href='oneplus.html'" class="brandcard">
+          <div class="brandlogobg">
+            <img class="brandlogo" src="onepluslogo.png" />
+          </div>
+        </div>
+        <div onclick="location.href='samsung.html'" class="brandcard">
+          <div class="brandlogobg">
+            <img class="brandlogo" src="samsunglogo.webp" />
+          </div>
+        </div>
+        <div onclick="location.href='xiaomi.html'" class="brandcard">
+          <div class="brandlogobg">
+            <img class="brandlogo" src="milogo.png" />
+          </div>
+        </div>
+        <div onclick="location.href='realme.html'" class="brandcard">
+          <div class="brandlogobg">
+            <img class="brandlogo" src="realmelogo.png" />
+          </div>
+        </div>
+        <div onclick="location.href='iqoo.html'" class="brandcard">
+          <div class="brandlogobg">
+            <img class="brandlogo" src="iqoologo.png" />
+          </div>
+        </div>
+        <div onclick="location.href='moto.html'" class="brandcard">
+          <div class="brandlogobg">
+            <img class="brandlogo" src="motologo.png" />
+          </div>
+        </div>
+        <div onclick="location.href='vivo.html'" class="brandcard">
+          <div class="brandlogobg">
+            <img class="brandlogo" src="vivologo.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+
+    <div class="shopprice">
+      <div class="inshop">
+        <h3 class="brandtitle">Browse Mobiles by Price</h3>
+        <div class="spb">
+          <a href="under10000.html" class="mbp">Best Mobiles Under 10000/-</a
+          ><br />
+          <br /><a href="under15000.html" class="mbp"
+            >Best Mobiles Under 15000/-</a
+          ><br />
+          <br /><a href="under20000.html" class="mbp"
+            >Best Mobiles Under 20000/-</a
+          ><br />
+          <br /><a href="under25000.html" class="mbp"
+            >Best Mobiles Under 25000/-</a
+          ><br />
+          <br /><a href="under35000.html" class="mbp"
+            >Best Mobiles Under 35000/-</a
+          ><br />
+          <br /><a href="under50000.html" class="mbp"
+            >Best Mobiles Under 50000/-</a
+          ><br />
+          <br /><a href="above50000.html" class="mbp"
+            >Best Mobiles Above 50000/-</a
+          ><br />
+        </div>
+      </div>
+      <div class="sideimage">
+        <h2>CHOOSE<br />WISELY</h2>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <h3 class="brandtitle">Upcoming Mobiles</h3>
+    <div class="contain">
+      <div class="card">
+        <img class="iph" src="nothingphone1.jpg" />
+        <div>
+          <br />
+          <h4>Nothing Phone 1</h4>
+          <br />
+          <ul>
+            <h5>Expected Specs</h5>
+            <li style="list-style: none">6.55' OLED</li>
+            <li style="list-style: none">Snapdragon 778G</li>
+            <li style="list-style: none">4500 mah(WIreless Charging)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img class="iph" src="vivot2.webp" />
+        <div>
+          <br />
+          <h4>Vivo T2</h4>
+          <br />
+          <ul>
+            <h5>Expected Specs</h5>
+            <li style="list-style: none">6.62' AMOLED</li>
+            <li style="list-style: none">Snapdragon 870</li>
+            <li style="list-style: none">4700 mah with 80W fast charge</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img class="iph" src="realmegtneo3t.jpg" />
+        <div>
+          <br />
+          <h4>Realme GT Neo 3T</h4>
+          <br />
+          <ul>
+            <h5>Expected Specs</h5>
+            <li style="list-style: none">6.62' AMOLED</li>
+            <li style="list-style: none">Snapdragon 870</li>
+            <li style="list-style: none">5000 mah with 80W fast charge</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <img class="iph" src="oneplusnord2t.png" />
+        <div>
+          <br />
+          <h4>Oneplus Nord 2T</h4>
+          <br />
+          <ul>
+            <h5>Expected Specs</h5>
+            <li style="list-style: none">6.43' AMOLED</li>
+            <li style="list-style: none">Mediatek Dimensity 1300</li>
+            <li style="list-style: none">4500 mah(80W charger)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="brandtitle">Top Selling Mobiles of the year</h3>
+
+    <div class="contain">
+      <div onclick="location.href='iphone13.html';" class="card">
+        <h2
+          style="
+            text-align: center;
+            background-color: rgb(193, 215, 215);
+            border-radius: 5px;
+          "
+        >
+          2022
+        </h2>
+        <img class="iph" src="iphone13.jpg" />
+        <div>
+          <br />
+          <h4>Iphone 13</h4>
+          <br />
+          <p>6.1' bright and beautiful OLED display</p>
+          <p>with A15 bionic chip</p>
+        </div>
+      </div>
+
+      <div onclick="location.href='oneplus9.html';" class="card">
+        <h2
+          style="
+            text-align: center;
+            background-color: rgb(193, 215, 215);
+            border-radius: 5px;
+          "
+        >
+          2021
+        </h2>
+        <img class="iph" src="oneplus9.png" />
+        <div>
+          <br />
+          <h4>OnePlus 9</h4>
+          <br />
+          <p>Powered by Snapdragon 888 with a 6.55 inch Fluid Amoled display</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="brandtitle">Latest Launches</h3>
+
+    <div class="contain">
+      <div onclick="location.href='pocof4.html';" class="card">
+        <img class="iph" src="pocof4.webp" />
+        <div>
+          <h4>Poco F4</h4>
+          <br />
+          <h4 style="color: rgb(250, 97, 9)">Rs. 27,999/-</h4>
+          <br />
+          <p>6.67' AMOLED display</p>
+          <p>with Snapdragon 870</p>
+          <p>4500mah with 65W fast charge</p>
+        </div>
+      </div>
+      <div onclick="location.href='iqooneo6.html';" class="card">
+        <img class="iph" src="iqooneo6.png" />
+        <div>
+          <h4>Iqoo Neo 6</h4>
+          <br />
+          <h4 style="color: rgb(250, 97, 9)">Rs. 29,999/-</h4>
+          <br />
+          <p>6.62' AMOLED display</p>
+          <p>with Snapdragon 870</p>
+          <p>64MP Triple rear camera</p>
+        </div>
+      </div>
+      <div onclick="location.href='oneplusnordce2lite.html';" class="card">
+        <img class="iph" src="oneplusnordce2lite.png" />
+        <div>
+          <h4>OnePlus Nord CE2 lite</h4>
+          <br />
+          <h4 style="color: rgb(250, 97, 9)">Rs. 19,999/-</h4>
+          <br />
+          <p>6.59' IPS LCD display</p>
+          <p>with Snapdragon 695</p>
+          <p>64MP Triple rear camera</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footcont">
+      <img
+        onclick="location.href='https://www.facebook.com/bharath.vamsi.904'"
+        class="socont"
+        src="facebook.png"
+      />
+      <img
+        onclick="location.href='https://www.instagram.com/urs_friendly_bharath/'"
+        class="socont"
+        src="instagram.webp"
+      />
+      <img class="socont" src="gmail.png" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".hello", {
+        strings: ["to", "the", "World", "of", "Mobiles"],
+        typeSpeed: 140,
+        backSpeed: 140,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
