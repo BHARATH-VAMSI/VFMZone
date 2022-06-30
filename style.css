@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+nav {
+  width: max(100%,540px);
+  background-color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+nav ul li a {
+  color: rgb(220, 227, 231);
+  font-size: larger;
+  text-decoration: none;
+}
+.menudrop{
+  display: none;
+}
+.menuimg{
+  display: none;
+  width: 30px;
+}
+@media screen and (max-width:540px) {
+ .contain,.menudrop,.brandtitle,.footcont
+ {
+  width: 540px;
+ }
+ nav{
+  position: relative;
+ }
+  .menuimg{
+    display: inline;
+  }
+  nav ul li {
+    display: none
+  }
+.menudrop{
+  display: grid;
+  justify-content: center;
+  background-color: black;
+  padding: 15px;
+}
+.menudrop a{
+  padding: 5px;
+}
+.none{
+  display: none;
+}
+.menudrop a{
+  text-decoration: none;
+  color: white;
+}
+  }
+  .logo {
+    max-width: 80px;
+  }
+  .mname{
+    color: rgb(40, 40, 123);
+    text-align: center;
+    margin: 20px auto 20px;
+    line-height: 50px;
+    position: relative;
+  }
+  .mname::after{
+    content: '';
+    width: 150px;
+    bottom: 0;
+    height: 2.5px;
+    border-radius: 5px;
+    left: 50%;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  .mob {
+    display: inline-block;
+    position: relative;
+  }
+  table {
+    max-width: 100%;
+  }
+  .maint {
+    font-size: 125%;
+    border: 1px solid black;
+  }
+  td {
+    width: 80%;
+  }
+  th {
+    min-width: 140px;
+  }
+  .intab {
+    padding: 10px;
+  }
+  .iqooz3 {
+    max-width: 45%;
+    float: left;
+    margin-left: 10px;
+    border: 1px solid rgb(5, 60, 68);
+  }
+  .price {
+    font-size: 130%;
+  }
+  .anim {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: moveright 0.5s linear forwards;
+  }
+  @keyframes moveright {
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  .contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card {
+    width: 200px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .iph {
+    width: 100%;
+  }
+  .footcont {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .socont {
+    width: 90px;
+    padding: 10px 30px;
+  }
+  .socont:hover {
+    background-color: rgb(227, 235, 237);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }

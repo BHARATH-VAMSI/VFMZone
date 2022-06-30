@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Samsung Mobiles</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="logo.png" />
+      <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+      <img id="logo" onclick="func()" class="menuimg" src="menu.jpg" />
+    </nav>
+    <div id="drop" class="menudrop none">
+      <a href="mainpage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="about.html">Contact me</a>
+    </div>
+
+    <script>
+      function func() {
+        const menu = document.getElementById("logo");
+        const drop = document.getElementById("drop");
+        if (drop.className === "menudrop") {
+          drop.className += " none";
+        } else {
+          drop.className = "menudrop";
+        }
+      }
+    </script>
+
+    <h3 class="brandtitle">Best Samsung Mobiles</h3>
+
+    <div class="contain">
+      <div onclick="location.href='samsungm52.html'" class="card">
+        <img class="iph" src="samsungm52.jpg" />
+        <div class="specs">
+          <br />
+          <h3>Samsung M52</h3>
+          <br />
+          <h3>Rs. 24,999/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.7 inch FHD+ sAMOLED display</p>
+          <p>64+12+5 MP rear | 32MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Qualcomm Snapdragon 778G chip</p>
+        </div>
+      </div>
+      <div onclick="location.href='samsungs22.html'" class="card">
+        <img class="iph" src="samsungs22.jpg" />
+        <div class="specs">
+          <br />
+          <h3>Samsung S22</h3>
+          <br />
+          <h3>Rs. 64,000/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.1 inch FHD+ dynamic AMOLED display</p>
+          <p>50+12+10 MP rear | 10MP front camera</p>
+          <p>3700 mah Battery</p>
+          <p>Qualcomm Snapdragon 8 Gen 1 chip</p>
+        </div>
+      </div>
+
+      <div onclick="location.href='samsungnote20.html'" class="card">
+        <img class="iph" src="samsungnote20.jpg" />
+        <div class="specs">
+          <br />
+          <h3>Samsung Note 20</h3>
+          <br />
+          <h3>Rs. 75,999/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.7 inch FHD+ sAMOLED display</p>
+          <p>12+64+12 MP rear | 10MP front camera</p>
+          <p>4300 mah Battery</p>
+          <p>Samsung Exynos 9 octa 990 chip</p>
+        </div>
+      </div>
+    </div>
+    <div class="footcont">
+      <img
+        onclick="location.href='https://www.facebook.com/bharath.vamsi.904'"
+        class="socont"
+        src="facebook.png"
+      />
+      <img
+        onclick="location.href='https://www.instagram.com/urs_friendly_bharath/'"
+        class="socont"
+        src="instagram.webp"
+      />
+      <img class="socont" src="gmail.png" />
+    </div>
+  </body>
+</html>

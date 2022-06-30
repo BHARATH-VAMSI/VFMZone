@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Mobiles under 20,000</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="logo.png" />
+      <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+      <img id="logo" onclick="func()" class="menuimg" src="menu.jpg" />
+    </nav>
+    <div id="drop" class="menudrop none">
+      <a href="mainpage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="about.html">Contact me</a>
+    </div>
+
+    <script>
+      function func() {
+        const menu = document.getElementById("logo");
+        const drop = document.getElementById("drop");
+        if (drop.className === "menudrop") {
+          drop.className += " none";
+        } else {
+          drop.className = "menudrop";
+        }
+      }
+    </script>
+
+    <h3 class="brandtitle">Best Mobiles Under 20,000/-</h3>
+
+    <div class="contain">
+      <div onclick="location.href='realme95gse.html'" class="card">
+        <img class="iph" src="realme95gse.jpg" />
+        <div class="specs">
+          <br />
+          <h3>Realme 9 5G SE</h3>
+          <br />
+          <h3>Rs. 19,990/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.6 inch FHD+ IPSLCD display</p>
+          <p>48+2+2 MP rear | 16MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Qualcomm Snapdragon 778G chip</p>
+        </div>
+      </div>
+      <div onclick="location.href='pocox4pro.html'" class="card">
+        <img class="iph" src="pocox4pro.png" />
+        <div class="specs">
+          <br />
+          <h3>Poco X4 Pro</h3>
+          <br />
+          <h3>Rs. 16,999/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.67 inch FHD+ sAMOLED display</p>
+          <p>64+8+2 MP rear | 16MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Qualcomm Snapdragon 695 chip</p>
+        </div>
+      </div>
+      <div onclick="location.href='motog71.html'" class="card">
+        <img class="iph" src="motog71.png" />
+        <div class="specs">
+          <br />
+          <h3>Moto G71</h3>
+          <br />
+          <h3>Rs. 18,799/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.4 inch FHD+ AMOLED display</p>
+          <p>50+8+2 MP rear | 16MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Qualcomm Snapdragon 695 chip</p>
+        </div>
+      </div>
+      <div onclick="location.href='iqooz3.html'" class="card">
+        <img class="iph" src="iqooz3.webp" />
+        <div class="specs">
+          <br />
+          <h3>Iqoo Z3</h3>
+          <br />
+          <h3>Rs. 17,999/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.58 inch FHD+ IPSLCD display</p>
+          <p>64+8+2 MP rear | 16MP front camera</p>
+          <p>4400 mah Battery</p>
+          <p>Qualcomm Snapdragon 768G chip</p>
+        </div>
+      </div>
+      <div onclick="location.href='vivot1.html'" class="card">
+        <img class="iph" src="vivot15g.png" />
+        <div class="specs">
+          <br />
+          <h3>Vivo T1 5G</h3>
+          <br />
+          <h3>Rs. 15,999/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.58 inch FHD+ IPSLCD display</p>
+          <p>50+2+2 MP rear | 16MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Qualcomm Snapdragon 695 chip</p>
+        </div>
+      </div>
+    </div>
+    <div class="footcont">
+      <img
+        onclick="location.href='https://www.facebook.com/bharath.vamsi.904'"
+        class="socont"
+        src="facebook.png"
+      />
+      <img
+        onclick="location.href='https://www.instagram.com/urs_friendly_bharath/'"
+        class="socont"
+        src="instagram.webp"
+      />
+      <img class="socont" src="gmail.png" />
+    </div>
+  </body>
+</html>

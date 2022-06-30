@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Mobiles under 10000</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="logo.png" />
+      <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+      <img id="logo" onclick="func()" class="menuimg" src="menu.jpg" />
+    </nav>
+    <div id="drop" class="menudrop none">
+      <a href="mainpage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="about.html">Contact me</a>
+    </div>
+
+    <script>
+      function func() {
+        const menu = document.getElementById("logo");
+        const drop = document.getElementById("drop");
+        if (drop.className === "menudrop") {
+          drop.className += " none";
+        } else {
+          drop.className = "menudrop";
+        }
+      }
+    </script>
+
+    <h3 class="brandtitle">Best Mobiles Under 10,000/-</h3>
+
+    <div class="contain">
+      <div onclick="location.href='motoe40.html'" class="card">
+        <img class="iph" src="motoe40.png" />
+        <div class="specs">
+          <br />
+          <h3>Moto E40</h3>
+          <br />
+          <h3>Rs. 9,990/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.5 inch HD+ LCD display</p>
+          <p>48+2+2 MP rear | 8MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Unisoc T700 chip</p>
+        </div>
+      </div>
+      <div onclick="location.href='realmenarzo30a.html'" class="card">
+        <img class="iph" src="realmenarzo30a.png" />
+        <div class="specs">
+          <br />
+          <h3>Realme Narzo 30A</h3>
+          <br />
+          <h3>Rs. 8,990/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.51 inch HD+ LCD display</p>
+          <p>13+2 MP rear | 8MP front camera</p>
+          <p>6000 mah Battery</p>
+          <p>Mediatek Helio G85</p>
+        </div>
+      </div>
+      <div onclick="location.href='infinixhot10s.html'" class="card">
+        <img class="iph" src="infinixhot10s.jpeg" />
+        <div class="specs">
+          <br />
+          <h3>Infinix Hot 10S</h3>
+          <br />
+          <h3>Rs. 9,999/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.82 inch HD+ IPSLCD display</p>
+          <p>48+2 MP rear | 8MP front camera</p>
+          <p>6000 mah Battery</p>
+          <p>Mediatek Helio G85</p>
+        </div>
+      </div>
+      <div onclick="location.href='micromaxin2b.html'" class="card">
+        <img class="iph" src="micromaxin2b.jpg" />
+        <div class="specs">
+          <br />
+          <h3>Micromax IN 2B</h3>
+          <br />
+          <h3>Rs. 8,499/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.52 inch HD+ LCD display</p>
+          <p>13+2 MP rear | 5MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Unisoc T610 chip</p>
+        </div>
+      </div>
+      <div onclick="location.href='realmec20.html'" class="card">
+        <img class="iph" src="realmec20.png" />
+        <div class="specs">
+          <br />
+          <h3>Realme C20</h3>
+          <br />
+          <h3>Rs. 7,499/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.5 inch HD+ IPSLCD display</p>
+          <p>8 MP rear | 5MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Mediatek Helio G35</p>
+        </div>
+      </div>
+    </div>
+    <div class="footcont">
+      <img
+        onclick="location.href='https://www.facebook.com/bharath.vamsi.904'"
+        class="socont"
+        src="facebook.png"
+      />
+      <img
+        onclick="location.href='https://www.instagram.com/urs_friendly_bharath/'"
+        class="socont"
+        src="instagram.webp"
+      />
+      <img class="socont" src="gmail.png" />
+    </div>
+  </body>
+</html>

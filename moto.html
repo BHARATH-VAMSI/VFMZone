@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Motorola Mobiles</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="logo.png" />
+      <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+      <img id="logo" onclick="func()" class="menuimg" src="menu.jpg" />
+    </nav>
+    <div id="drop" class="menudrop none">
+      <a href="mainpage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="about.html">Contact me</a>
+    </div>
+
+    <script>
+      function func() {
+        const menu = document.getElementById("logo");
+        const drop = document.getElementById("drop");
+        if (drop.className === "menudrop") {
+          drop.className += " none";
+        } else {
+          drop.className = "menudrop";
+        }
+      }
+    </script>
+
+    <h3 class="brandtitle">Best Motorola Mobiles</h3>
+
+    <div class="contain">
+      <div onclick="location.href='motoe40.html'" class="card">
+        <img class="iph" src="motoe40.png" />
+        <div class="specs">
+          <br />
+          <h3>Moto E40</h3>
+          <br />
+          <h3>Rs. 9,990/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.5 inch HD+ LCD display</p>
+          <p>48+2+2 MP rear | 8MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Unisoc T700 chip</p>
+        </div>
+      </div>
+      <div onclick="location.href='motog52.html'" class="card">
+        <img class="iph" src="motog52.png" />
+        <div class="specs">
+          <br />
+          <h3>Moto G52</h3>
+          <br />
+          <h3>Rs. 14,499/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.6 inch FHD+ pOLED display</p>
+          <p>50+8+2 MP rear | 16MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Qualcomm Snapdragon 680 chip</p>
+        </div>
+      </div>
+      <div onclick="location.href='motog71.html'" class="card">
+        <img class="iph" src="motog71.png" />
+        <div class="specs">
+          <br />
+          <h3>Moto G71</h3>
+          <br />
+          <h3>Rs. 18,799/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.4 inch FHD+ AMOLED display</p>
+          <p>50+8+2 MP rear | 16MP front camera</p>
+          <p>5000 mah Battery</p>
+          <p>Qualcomm Snapdragon 695 chip</p>
+        </div>
+      </div>
+      <div onclick="location.href='motoedge30pro.html'" class="card">
+        <img class="iph" src="motoedge30pro.png" />
+        <div class="specs">
+          <br />
+          <h3>Moto Edge 30 Pro</h3>
+          <br />
+          <h3>Rs. 44,999/-</h3>
+          <br />
+          <p style="color: rgb(163, 160, 160)">Quick specs</p>
+          <p>6.7 inch FHD+ fluid AMOLED display</p>
+          <p>50+50+2 MP rear | 32MP front camera</p>
+          <p>4800 mah Battery</p>
+          <p>Qualcomm Snapdragon 8 Gen 1 chip</p>
+        </div>
+      </div>
+    </div>
+    <div class="footcont">
+      <img
+        onclick="location.href='https://www.facebook.com/bharath.vamsi.904'"
+        class="socont"
+        src="facebook.png"
+      />
+      <img
+        onclick="location.href='https://www.instagram.com/urs_friendly_bharath/'"
+        class="socont"
+        src="instagram.webp"
+      />
+      <img class="socont" src="gmail.png" />
+    </div>
+  </body>
+</html>

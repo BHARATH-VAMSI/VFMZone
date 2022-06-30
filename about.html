@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Iphones</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="logo.png" />
+      <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+      <img id="logo" onclick="func()" class="menuimg" src="menu.jpg" />
+    </nav>
+    <div id="drop" class="menudrop none">
+      <a href="mainpage.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="about.html">Contact me</a>
+    </div>
+
+    <script>
+      function func() {
+        const menu = document.getElementById("logo");
+        const drop = document.getElementById("drop");
+        if (drop.className === "menudrop") {
+          drop.className += " none";
+        } else {
+          drop.className = "menudrop";
+        }
+      }
+    </script>
+
+    <h3 class="brandtitle">VFM Zone</h3>
+    <div class="contain">
+    <div class="about">
+      <h3>About:</h3>
+      <br /><br />
+      <p>Welcome,</p>
+      <p>
+        This Website named VFM Zone is like all about guidance for mobiles.VFM
+        stands for Value For Money.Our main aim is to suggest you the bext value
+        for money mobiles for the amount you afford
+      </p>
+      <p>
+        Most of us have a dream of buying a Smart phone but we dont have much
+        knowledge about it.Although in the present market there are numerous
+        mobiles(we can say countless).Bunch of Mobiles have been launching
+        within the span of less than a month.
+      </p>
+      <p>
+        Whenever we visit a shop to buy a smart phone, we may get convinced for
+        the highlighted features they tell which are not at all worthy for that
+        price range,that is same with the case in online.Why should we waste our
+        money on some other smart phone which do not satisify our desire of
+        buying a smartphone.
+      </p>
+      <p>
+        This website-VFM will expose you top picks of mobiles under each
+        category namely price,brand,latest etc.. These are the best phones under
+        their category for the amount you afford.Trust me you will Never regret!
+      </p>
+      <br />
+      <h3 style="text-align: center">CHOOSE WISELY!</h3>
+    </div>
+</div>
+    <h3 class="brandtitle">Contact</h3>
+    <div class="contain">
+    <div class="about">
+      <p style="font-weight: 700; font-size: x-large">
+        For further details you can contact us through:
+      </p>
+      <br /><br />
+      <div class="sociall">
+        <div class="social">
+          <img
+            onclick="location.href='https://www.facebook.com/bharath.vamsi.904'"
+            class="socont"
+            src="facebook.png"
+          />
+          <p>-- @Bharath Vamsi</p>
+        </div>
+        <div class="social">
+          <img
+            onclick="location.href='https://www.instagram.com/urs_friendly_bharath/'"
+            class="socont"
+            src="instagram.webp"
+          />
+          <p>-- @urs_friendly_bharath</p>
+        </div>
+        <div class="social">
+          <img class="socont" src="gmail.png" />
+          <p>-- BharathVamsi@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <h3 class="brandtitle">Browse Other Phones</h3>
+    <div class="contain1">
+      <div onclick="location.href='iphone12.html'" class="card">
+        <img class="iph" src="iphone12.jpg" />
+        <div>
+          <br />
+          <h4>Iphone 12</h4>
+          <br />
+          <p>with A14 bionic chip.bright and beautiful OLED display</p>
+        </div>
+      </div>
+      <div onclick="location.href='oneplus10pro.html'" class="card">
+        <img class="iph" src="oneplus10pro.png" />
+        <div>
+          <br />
+          <h4>OnePlus 10 Pro</h4>
+          <br />
+          <p>
+            Powered by Snapdragon 8 Gen 1 with a huge 6.7 inch Fluid Amoled
+            display
+          </p>
+        </div>
+      </div>
+      <div onclick="location.href='samsungnote20.html'" class="card">
+        <img class="iph" src="samsungnote20.jpg" />
+        <div>
+          <br />
+          <h4>Samsung Note 20</h4>
+          <br />
+          <p>With stylus,flagship processor and beautiful cameras</p>
+        </div>
+      </div>
+      <div onclick="location.href='mi12pro.html'" class="card">
+        <img class="iph" src="mi12pro.png" />
+        <div>
+          <br />
+          <h4>Xiaomi 12 pro</h4>
+          <br />
+          <p>
+            Comes with 120W HyperCharge and powered by Snapdragon 8 Gen 1
+            processor
+          </p>
+        </div>
+      </div>
+      <div onclick="location.href='iqoo9pro.html'" class="card">
+        <img class="iph" src="iqoo9pro.jpg" />
+        <div>
+          <br />
+          <h4>Iqoo 9 pro</h4>
+          <br />
+          <p>
+            Built with a seperate display chip and powered by Snapdragon 8 Gen 1
+            processor and good cameras
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

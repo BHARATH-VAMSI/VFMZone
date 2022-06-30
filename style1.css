@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  nav {
+    width: max(100%,540px);
+    background-color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+  }
+  nav ul li a {
+    color: rgb(220, 227, 231);
+    font-size: larger;
+    text-decoration: none;
+  }
+  .menudrop{
+    display: none;
+  }
+  .menuimg{
+    display: none;
+    width: 30px;
+  }
+  @media screen and (max-width:540px) {
+.shopbrand,.brandtitle,.contain{
+  width: 540px;
+}
+    nav{
+    position: relative;
+   }
+    .menuimg{
+      display: inline;
+    }
+    nav ul li {
+      display: none
+    }
+.menudrop{
+  display: grid;
+  justify-content: center;
+  background-color: black;
+  padding: 15px;
+}
+.menudrop a{
+  padding: 5px;
+}
+.none{
+  display: none;
+}
+.menudrop a{
+  text-decoration: none;
+  color: white;
+}
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+ 
+  .welcome{
+    width: max(540px,100%);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+   
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(152, 143, 143, 0.2)),
+    url("background.jpg") no-repeat center center fixed; 
+
+    background-size: cover;
+  }
+  .welcome{
+    text-align: center;
+  font-size: 320%;
+  } 
+ @media screen and (max-width:400px){
+  .welcome{
+    font-size: 10vw;
+  }
+ }
+  .brandtitle{
+    text-align: center;
+    font-size: 160%;
+    margin: 20px auto 30px;
+    position: relative;
+    line-height: 50px;
+  }
+  .brandtitle::after{
+    content: '';
+    width: 150px;
+    bottom: 0;
+    height: 2.5px;
+    border-radius: 5px;
+    left: 50%;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  .brandlogo{
+    width: 80%;
+  }
+  .brandlogobg{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(206, 219, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brandlogobg:hover{
+    background-color: rgb(255, 255, 255);
+  }
+  .brandcard{
+    flex-basis: 15%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 20px;
+  }
+  .shopbrandcard{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: rgb(206, 219, 215);
+  }
+
+.shopprice{
+  width: 100%;
+  display: inline-flex;
+}
+.inshop{
+  width:50%;
+}
+.sideimage{
+  width:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(rgba(63, 16, 16, 0.9), rgba(255, 255, 255, 0.2)),url(mobilesider2.avif); 
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.sideimage h2{
+font-size: xxx-large;
+letter-spacing: 15px;
+opacity: 1;
+animation: fade 1.5s;
+}
+@keyframes fade{
+  0%{
+    letter-spacing: 0px;
+  }
+}
+.spb{
+  text-align: center;
+}
+  .mbp{
+    text-decoration: none;
+    font-size: large;
+    text-align: center;
+    color: black;
+  }
+  .mbp:hover{
+    color:rgb(0, 0, 0);
+    font-weight: 700;
+  }
+  @media screen and (max-width: 800px) {
+    .sideimage{
+      display: none;
+    }
+    .inshop{
+      width: max(540px,100%);
+    }
+  }
+  
+  .contain {
+    background-color: rgb(226, 234, 234);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card {
+    background-color: white;
+    width: 200px;
+    height: 350px;
+    padding: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+  }
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .iph {
+    width: 100%;
+  }
+  
+  .footcont {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .socont {
+    width: 90px;
+    padding: 10px 30px;
+  }
+  .socont:hover {
+    background-color: rgb(227, 235, 237);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
